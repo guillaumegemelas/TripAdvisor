@@ -2,7 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: TS-Reg, sans-serif;
+  font-family: "Trip Sans";
+  font-weight: 500;
+  font-style: normal;
   text-decoration: none;
 }
 
@@ -104,4 +106,25 @@ i {
 .container1 nav a:hover {
   color: white;
   background-color: black;
+}
+
+.pictures {
+  display: flex;
+  padding-top: 40px;
+  height: 430px;
+  width: 1150px;
+  /* background-color: grey; */
+  flex-direction: nowrap;
+}
+
+.paris1 {
+  width: 653px;
+}
+.paris2 {
+  height: 213px;
+  padding-left: 2px;
+}
+.paris3 {
+  height: 213px;
+  padding-left: 2px;
 }
