@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1150px;
+  background-color: bisque;
+  margin: 0 auto;
+}
+
+.container img {
+  width: 210px;
+}
