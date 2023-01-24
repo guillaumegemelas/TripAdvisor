@@ -3,8 +3,6 @@ html {
 }
 body {
   font-family: "Trip Sans";
-  font-weight: 500;
-  font-style: normal;
   text-decoration: none;
 }
 
@@ -14,11 +12,24 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h3 {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
 /*container en haut de la page contenant le logo et les nav*/
 
 .container {
   display: flex;
-  width: 1150px;
+  width: 1130px;
   /* background-color: bisque; */
   margin: 0 auto;
   padding-top: 20px;
@@ -43,7 +54,7 @@ h1 {
 .container a {
   text-decoration: none;
   font-size: 15px;
-  font-size: medium;
+
   color: black;
 }
 
@@ -65,16 +76,18 @@ h1 {
 i {
   width: 10px;
 }
+.container button:hover {
+  background-color: rgba(0, 0, 0, 0.774);
+}
 
 /*second caontainer pour la partie main: voir l'utilité*/
 .container1 {
-  width: 1150px;
+  width: 1130px;
   /* background-color: rgb(209, 222, 161); */
   padding-top: 50px;
   margin: 0 auto;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
+
 .container1 p {
   padding-top: 23px;
   font-size: 14px;
@@ -83,7 +96,6 @@ i {
 .container1 ul {
   padding-top: 40px;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -100,9 +112,6 @@ i {
   color: #190f33;
 }
 
-.container button:hover {
-  background-color: rgba(0, 0, 0, 0.774);
-}
 .container1 nav a:hover {
   color: white;
   background-color: black;
@@ -112,19 +121,109 @@ i {
   display: flex;
   padding-top: 40px;
   height: 430px;
-  width: 1150px;
+  width: 1130px;
   /* background-color: grey; */
-  flex-direction: nowrap;
 }
 
 .paris1 {
   width: 653px;
+  height: 430px;
+  flex: 1;
 }
+
 .paris2 {
+  width: 475px;
   height: 213px;
+  object-fit: cover;
   padding-left: 2px;
 }
 .paris3 {
+  width: 475px;
   height: 213px;
+  object-fit: cover;
   padding-left: 2px;
+}
+
+.nav1 {
+  display: flex;
+  justify-content: left;
+  width: 1125px;
+  /* border: #190f33 1px solid; */
+  /* background-color: #7c4d4d; */
+  margin: 0 auto;
+}
+
+.nav1 a {
+  /* background-color: #fe5d5d; */
+  /*problème de texte décoration: il a fallut augmenter la spécificité*/
+  line-height: 45px;
+  text-decoration: none;
+  color: #190f33;
+  font-size: 13px;
+}
+
+.container3 {
+  display: flex;
+  width: 1130px;
+  /* background-color: rgb(177, 142, 100); */
+  margin: 0 auto;
+  padding-top: 90px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.container3 p {
+  padding-top: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.container4 {
+  display: flex;
+  width: 400px;
+  background-color: #fe5d5d;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding-top: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.container4 p {
+  font-family: "Trip sans";
+  padding-left: 30px;
+  font-size: 15px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+}
+.container4 img {
+  width: 400px;
+  box-sizing: border-box;
+  justify-content: left;
+}
+
+.container4 h3 {
+  padding-left: 30px;
+}
+
+.button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 146px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+.container4 button a {
+  text-decoration: none;
+  color: white;
+}
+.container4 button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.474);
 }
