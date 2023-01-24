@@ -29,10 +29,27 @@ header {
   display: flex;
   width: 500px;
   background-color: yellow;
-  font-size: 20px;
-  color: #190f33;
-  text-decoration: none;
   justify-content: space-around;
+  align-items: center;
+}
+
+.container a {
+  text-decoration: none;
+  font-size: 15px;
+  font-size: medium;
+  color: #190f33;
+}
+
+.container > div > nav > button {
+  width: 146px;
+  height: 44px;
+  background-color: grey;
+  border-radius: 20px;
+}
+.container section {
+  background-color: #fff;
+  width: 200px;
+  width: fit-content;
 }
 
 i {
