@@ -6,16 +6,23 @@ body {
   text-decoration: none;
 }
 
+h1 {
+  color: #fe5d5d;
+  font-size: 54px;
+  font-weight: bold;
+}
+
 /*container en haut de la page contenant le logo et les nav*/
 
 header {
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .container {
   display: flex;
   width: 1150px;
-  background-color: bisque;
+  /* background-color: bisque; */
   margin: 0 auto;
+  padding-top: 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -28,11 +35,12 @@ header {
 .container nav {
   display: flex;
   width: 500px;
-  background-color: yellow;
+  /* background-color: yellow; */
   justify-content: space-around;
   align-items: center;
 }
 
+/*problème pour changer couleur de font: faut il isoler le bouton du reste de la div?*/
 .container a {
   text-decoration: none;
   font-size: 15px;
@@ -43,8 +51,11 @@ header {
 .container > div > nav > button {
   width: 146px;
   height: 44px;
-  background-color: grey;
+  background-color: black;
   border-radius: 20px;
+}
+.container nav button a {
+  color: white;
 }
 .container section {
   background-color: #fff;
@@ -54,4 +65,15 @@ header {
 
 i {
   width: 10px;
+}
+
+/*second caontainer pour la partie main: voir l'utilité*/
+.container1 {
+  display: flex;
+  width: 1150px;
+  background-color: rgb(209, 222, 161);
+  padding-top: 50px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
