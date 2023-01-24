@@ -1,13 +1,40 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  font-family: TS-Reg, sans-serif;
+  text-decoration: none;
+}
 
+/*container en haut de la page contenant le logo et les nav*/
+
+header {
+  background-color: aqua;
+}
 .container {
+  display: flex;
   width: 1150px;
   background-color: bisque;
   margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/*renvoie au logo Tripadvisor*/
 .container img {
   width: 210px;
+}
+
+.container nav {
+  display: flex;
+  width: 500px;
+  background-color: yellow;
+  font-size: 20px;
+  color: #190f33;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+i {
+  width: 10px;
 }
