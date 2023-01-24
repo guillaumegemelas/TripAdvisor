@@ -14,9 +14,6 @@ h1 {
 
 /*container en haut de la page contenant le logo et les nav*/
 
-header {
-  /* background-color: aqua; */
-}
 .container {
   display: flex;
   width: 1150px;
@@ -45,7 +42,7 @@ header {
   text-decoration: none;
   font-size: 15px;
   font-size: medium;
-  color: #190f33;
+  color: black;
 }
 
 .container > div > nav > button {
@@ -69,11 +66,42 @@ i {
 
 /*second caontainer pour la partie main: voir l'utilité*/
 .container1 {
-  display: flex;
   width: 1150px;
-  background-color: rgb(209, 222, 161);
+  /* background-color: rgb(209, 222, 161); */
   padding-top: 50px;
   margin: 0 auto;
-  justify-content: space-between;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.container1 p {
+  padding-top: 23px;
+  font-size: 14px;
+}
+
+.container1 ul {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*comment mettre les li un peu décalées*/
+.container1 a {
+  display: flex;
+  border: #190f33 1px solid;
+  border-radius: 15px;
+  width: 180px;
+  height: 68px;
+  justify-content: space-around;
   align-items: center;
+  text-decoration: none;
+  color: #190f33;
+}
+
+.container button:hover {
+  background-color: rgba(0, 0, 0, 0.774);
+}
+.container1 nav a:hover {
+  color: white;
+  background-color: black;
 }
