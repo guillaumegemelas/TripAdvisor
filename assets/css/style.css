@@ -316,6 +316,7 @@ main .colo2 .scroll p {
   position: absolute;
   right: 22px;
   top: 22px;
+  z-index: 1;
 }
 
 .scroll div {
@@ -326,6 +327,9 @@ main .colo2 .scroll p {
   position: absolute;
   right: 10px;
   top: 10px;
+  z-index: 1;
+  /*z-index: 1 pour que le fond blanc du div (rond) et du coeur
+  ne s'enlève pas avec l'opacité à 0,5 quand on passe sur les img*/
 }
 
 .scroll img:hover {
