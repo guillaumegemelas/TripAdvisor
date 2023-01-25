@@ -258,6 +258,8 @@ h1 span {
 }
 
 /*---Seconde partie de l'exercice-----------------------------------------------------------------*/
+
+/* les 3 blocs suivants étant les mêmes en terme de structure, seul le HTML sera à refaire 3 fois --------------*/
 .unmiss {
   margin-top: 30px;
   /* height: 500px; determiner une valeur pour voir le bloc */
@@ -266,8 +268,8 @@ h1 span {
 
 main .bloc {
   margin-top: 30px;
-  height: 200px;
   /* background-color: #fe5d5d; */
+  margin-bottom: 50px;
 }
 .bloc {
   display: flex;
@@ -282,18 +284,24 @@ main .bloc {
 
 .bloc p {
   padding-top: 25px;
-  padding-bottom: 20px;
+
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
 }
+main .colo2 .scroll p {
+  font-family: "Trip Sans 1";
+  font-size: 14px;
+}
+
 .colo2 .scroll {
   display: flex;
   gap: 15px;
-  height: 250px;
+  height: 300px;
   width: 850px;
   overflow: hidden;
   overflow-x: scroll;
   position: relative;
+  line-height: 0;
 }
 
 .scroll li {
@@ -329,3 +337,5 @@ main .bloc {
   height: 200px;
   padding-bottom: 10px;
 }
+
+/* Fin des 3 blocs -------------------------------------------------------------*/
