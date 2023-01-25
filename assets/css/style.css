@@ -6,7 +6,8 @@ html {
 
 body {
   font-family: "Trip Sans";
-
+  /* pour rendre la police de caractère plus douce sans aliasing*/
+  -webkit-font-smoothing: antialiased;
   text-decoration: none;
 }
 
