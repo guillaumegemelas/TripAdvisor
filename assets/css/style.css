@@ -339,3 +339,21 @@ main .colo2 .scroll p {
 }
 
 /* Fin des 3 blocs -------------------------------------------------------------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: bisque;
+}
+footer img {
+  width: 60px;
+  padding-right: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
