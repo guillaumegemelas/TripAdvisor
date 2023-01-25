@@ -259,15 +259,15 @@ h1 span {
 
 /*---Seconde partie de l'exercice-----------------------------------------------------------------*/
 .unmiss {
-  margin-top: 10px;
+  margin-top: 30px;
   /* height: 500px; determiner une valeur pour voir le bloc */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 main .bloc {
   margin-top: 30px;
   height: 200px;
-  background-color: #fe5d5d;
+  /* background-color: #fe5d5d; */
 }
 .bloc {
   display: flex;
@@ -296,17 +296,32 @@ main .bloc {
   position: relative;
 }
 
-.scroll .i {
-  position: absolute;
+.scroll li {
+  position: relative;
 }
 
+.colo2 .scroll i {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+}
+
+.scroll div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 .colo1 {
   flex: 1;
-  background-color: rgb(176, 176, 216);
+  /* background-color: rgb(176, 176, 216); */
 }
 .colo2 {
   flex: 3;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .bloc img {
