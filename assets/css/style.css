@@ -6,7 +6,14 @@ html {
 
 body {
   font-family: "Trip Sans";
+
   text-decoration: none;
+}
+
+.container {
+  width: 1130px;
+  /* background-color: bisque; */
+  margin: 0 auto;
 }
 
 h1 {
@@ -22,8 +29,7 @@ h2 {
 
 h3 {
   color: black;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -34,17 +40,6 @@ h3 {
 header {
   height: 60px;
   /* border: #190f33 1px solid; */
-}
-
-.container {
-  display: flex;
-  height: 100%;
-  width: 1130px;
-  /* background-color: bisque; */
-  margin: 0 auto;
-  /* padding-top: 20px; */
-  justify-content: space-between;
-  align-items: center;
 }
 
 /*renvoie au logo Tripadvisor*/
@@ -60,9 +55,15 @@ header nav {
   /*ne pas mettre de largeur pour que la larguer s'adapte au contenu
   display: flex;
   /* background-color: yellow;*/
-  justify-content: space-around;
+  display: flex;
   align-items: center;
   gap: 10px;
+}
+
+header .container {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
 }
 
 /*problème pour changer couleur de font: faut il isoler le bouton du reste de la div?*/
@@ -194,7 +195,6 @@ h1 span {
   padding-top: 90px;
   justify-content: space-between;
   align-items: flex-start;
-  padding-left: 30px;
   box-sizing: border-box;
 }
 
@@ -224,12 +224,15 @@ h1 span {
 }
 .col2 img {
   width: 400px;
-  box-sizing: border-box;
   justify-content: left;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
-.col2 h3 {
+.col2 h2 {
   padding-left: 30px;
+  line-height: 30px;
+  padding-bottom: 10px;
 }
 
 .button2 {
@@ -255,3 +258,59 @@ h1 span {
 }
 
 /*---Seconde partie de l'exercice-----------------------------------------------------------------*/
+.unmiss {
+  margin-top: 10px;
+  /* height: 500px; determiner une valeur pour voir le bloc */
+  border: 1px solid black;
+}
+
+main .bloc {
+  margin-top: 30px;
+  height: 200px;
+  background-color: #fe5d5d;
+}
+.bloc {
+  display: flex;
+}
+
+.bloc a {
+  color: black;
+}
+.scroll a {
+  text-decoration: none;
+}
+
+.bloc p {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+.colo2 .scroll {
+  display: flex;
+  gap: 15px;
+  height: 250px;
+  width: 850px;
+  overflow: hidden;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.scroll .i {
+  position: absolute;
+}
+
+.colo1 {
+  flex: 1;
+  background-color: rgb(176, 176, 216);
+}
+.colo2 {
+  flex: 3;
+  background-color: aqua;
+}
+
+.bloc img {
+  width: 271px;
+  height: 200px;
+  padding-bottom: 10px;
+}
