@@ -302,10 +302,14 @@ main .colo2 .scroll p {
   gap: 15px;
   height: 300px;
   width: 850px;
-  /* overflow: hidden; */
   overflow-x: scroll;
   position: relative;
   line-height: 0;
+}
+
+/* pour masquer la scrollbar sans enlever sa fonctionnalité*/
+.scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .scroll li {
