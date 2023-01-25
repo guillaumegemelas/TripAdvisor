@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Trip Sans";
   text-decoration: none;
@@ -26,7 +27,8 @@ h3 {
   line-height: 30px;
 }
 
-/* HEADER--------------------------------------------------*/
+/* HEADER--------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
 
 /*container en haut de la page contenant le logo et les nav*/
 header {
@@ -54,16 +56,17 @@ header nav span {
   margin-left: 15px;
 }
 
-.container nav {
+header nav {
+  /*ne pas mettre de largeur pour que la larguer s'adapte au contenu
   display: flex;
-  width: 500px;
   /* background-color: yellow;*/
   justify-content: space-around;
   align-items: center;
+  gap: 10px;
 }
 
 /*problème pour changer couleur de font: faut il isoler le bouton du reste de la div?*/
-.container a {
+header a {
   text-decoration: none;
   font-size: 15px;
   color: black;
@@ -72,11 +75,7 @@ header nav span {
   padding: 5px 6px;
 }
 
-.container nav a:hover {
-  background-color: lightgray;
-}
-
-.container > div > nav > button {
+header > .container > nav > button {
   width: 146px;
   height: 44px;
   background-color: black;
@@ -85,18 +84,16 @@ header nav span {
   font-family: inherit;
   font-size: inherit;
 }
-
-.container section {
-  background-color: #fff;
-  width: 200px;
-  width: fit-content;
+header nav a:hover {
+  background-color: lightgray;
 }
 
 .container button:hover {
   background-color: rgba(0, 0, 0, 0.774);
 }
 
-/* MAIN ---------------------------------------------------*/
+/* --------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
 
 /*second container pour la partie main: voir l'utilité*/
 .container1 {
@@ -140,12 +137,12 @@ h1 span {
   background-color: black;
 }
 
-/* 3 PHOTOS DE PARIS-----------------------------------------*/
-.pictures {
+/* 3 PHOTOS DE PARIS----------------------------------------------------------------*/
+.menu {
   display: flex;
   padding-top: 40px;
   height: 430px;
-  width: 1130px;
+  gap: 2px;
   /* background-color: grey; */
 }
 
@@ -167,6 +164,7 @@ h1 span {
   object-fit: cover;
   padding-left: 2px;
 }
+/* 4 LIENS DE NAV SOUS PHOTOS----------------------------------------------------*/
 
 .nav1 {
   display: flex;
@@ -186,6 +184,8 @@ h1 span {
   font-size: 13px;
 }
 
+/* ------------------------------------------------------------------------------*/
+
 .container3 {
   display: flex;
   width: 1130px;
@@ -198,13 +198,13 @@ h1 span {
   box-sizing: border-box;
 }
 
-.container3 p {
+.col1 p {
   padding-top: 35px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
 }
 
-.container4 {
+.col2 {
   display: flex;
   width: 400px;
   background-color: #fe5d5d;
@@ -215,20 +215,20 @@ h1 span {
   align-items: flex-start;
   box-sizing: border-box;
 }
-.container4 p {
+.col2 p {
   font-family: "Trip sans";
   padding-left: 30px;
   font-size: 15px;
   padding-bottom: 25px;
   box-sizing: border-box;
 }
-.container4 img {
+.col2 img {
   width: 400px;
   box-sizing: border-box;
   justify-content: left;
 }
 
-.container4 h3 {
+.col2 h3 {
   padding-left: 30px;
 }
 
@@ -245,11 +245,13 @@ h1 span {
   font-family: inherit;
   font-size: inherit;
 }
-.container4 button a {
+.col2 button a {
   text-decoration: none;
   color: white;
 }
-.container4 button:hover {
+.col2 button:hover {
   color: white;
   background-color: rgba(0, 0, 0, 0.474);
 }
+
+/*---Seconde partie de l'exercice-----------------------------------------------------------------*/
