@@ -165,6 +165,11 @@ h1 span {
   object-fit: cover;
   padding-left: 2px;
 }
+
+.menu img:hover {
+  opacity: 0.5;
+}
+
 /* 4 LIENS DE NAV SOUS PHOTOS----------------------------------------------------*/
 
 .nav1 {
@@ -201,7 +206,7 @@ h1 span {
 .col1 p {
   padding-top: 35px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .col2 {
@@ -242,7 +247,7 @@ h1 span {
   width: 146px;
   height: 44px;
   background-color: rgba(0, 0, 0, 0.752);
-  border-radius: 20px;
+  border-radius: 15px;
   margin-bottom: 20px;
   margin-left: 30px;
   font-family: inherit;
@@ -268,7 +273,7 @@ h1 span {
 
 main .bloc {
   margin-top: 30px;
-  /* background-color: #fe5d5d; */
+  /*background-color: #fe5d5d;*/
   margin-bottom: 50px;
 }
 .bloc {
@@ -284,7 +289,6 @@ main .bloc {
 
 .bloc p {
   padding-top: 25px;
-
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
 }
@@ -298,7 +302,7 @@ main .colo2 .scroll p {
   gap: 15px;
   height: 300px;
   width: 850px;
-  overflow: hidden;
+  /* overflow: hidden; */
   overflow-x: scroll;
   position: relative;
   line-height: 0;
@@ -323,6 +327,11 @@ main .colo2 .scroll p {
   right: 10px;
   top: 10px;
 }
+
+.scroll img:hover {
+  opacity: 0.5;
+}
+
 .colo1 {
   flex: 1;
   /* background-color: rgb(176, 176, 216); */
