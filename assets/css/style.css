@@ -1,3 +1,5 @@
+/* GENERAL------------------------------------------------*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,7 +9,6 @@ body {
 }
 
 h1 {
-  color: #fe5d5d;
   font-size: 54px;
   font-weight: bold;
 }
@@ -25,27 +26,38 @@ h3 {
   line-height: 30px;
 }
 
+/* HEADER--------------------------------------------------*/
+
 /*container en haut de la page contenant le logo et les nav*/
+header {
+  height: 60px;
+  /* border: #190f33 1px solid; */
+}
 
 .container {
   display: flex;
+  height: 100%;
   width: 1130px;
   /* background-color: bisque; */
   margin: 0 auto;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   justify-content: space-between;
   align-items: center;
 }
 
 /*renvoie au logo Tripadvisor*/
-.container img {
-  width: 210px;
+header img {
+  width: 200px;
+}
+/*pour avoir espace entre éléments span*/
+header nav span {
+  margin-left: 15px;
 }
 
 .container nav {
   display: flex;
   width: 500px;
-  /* background-color: yellow; */
+  /* background-color: yellow;*/
   justify-content: space-around;
   align-items: center;
 }
@@ -54,38 +66,47 @@ h3 {
 .container a {
   text-decoration: none;
   font-size: 15px;
-
   color: black;
+  /* background-color: #fe5d5d; */
+  border-radius: 20px;
+  padding: 5px 6px;
+}
+
+.container nav a:hover {
+  background-color: lightgray;
 }
 
 .container > div > nav > button {
   width: 146px;
   height: 44px;
   background-color: black;
-  border-radius: 20px;
-}
-.container nav button a {
   color: white;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: inherit;
 }
+
 .container section {
   background-color: #fff;
   width: 200px;
   width: fit-content;
 }
 
-i {
-  width: 10px;
-}
 .container button:hover {
   background-color: rgba(0, 0, 0, 0.774);
 }
 
-/*second caontainer pour la partie main: voir l'utilité*/
+/* MAIN ---------------------------------------------------*/
+
+/*second container pour la partie main: voir l'utilité*/
 .container1 {
   width: 1130px;
   /* background-color: rgb(209, 222, 161); */
   padding-top: 50px;
   margin: 0 auto;
+}
+h1 span {
+  color: #fe5d5d;
 }
 
 .container1 p {
@@ -103,11 +124,13 @@ i {
 .container1 a {
   display: flex;
   border: #190f33 1px solid;
-  border-radius: 15px;
+  border-radius: 10px;
   width: 180px;
-  height: 68px;
+  height: 60px;
   justify-content: space-around;
-  align-items: center;
+  /*pour aligner les items des menus en les décalant de 16px */
+  align-items: baseline;
+  padding-top: 16px;
   text-decoration: none;
   color: #190f33;
 }
@@ -117,6 +140,7 @@ i {
   background-color: black;
 }
 
+/* 3 PHOTOS DE PARIS-----------------------------------------*/
 .pictures {
   display: flex;
   padding-top: 40px;
@@ -218,6 +242,8 @@ i {
   border-radius: 20px;
   margin-bottom: 20px;
   margin-left: 30px;
+  font-family: inherit;
+  font-size: inherit;
 }
 .container4 button a {
   text-decoration: none;

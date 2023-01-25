@@ -14,6 +14,7 @@
       src="https://kit.fontawesome.com/411cafb371.js"
       crossorigin="anonymous"
     ></script>
+    <!----------------------------->
     <title>TripAdvisor</title>
   </head>
   <body>
@@ -35,23 +36,30 @@
         <div>
           <!-- 3. menu avis, alertes et favoris -->
           <nav>
-            <i class="fa-solid fa-pencil"></i><a href="#Contribution">Avis</a>
+            <a href="#Contribution"
+              ><i class="fa-solid fa-pencil"></i><span>Avis</span>
+            </a>
 
-            <i class="fa-regular fa-heart"></i><a href="#Trips">Voyages</a>
+            <a href="#Trips"
+              ><i class="fa-regular fa-heart"></i><span>Voyages</span></a
+            >
 
-            <i class="fa-regular fa-bell"></i><a href="#Alerts">Alertes</a>
+            <a href="#Alerts"
+              ><i class="fa-regular fa-bell"></i><span>Alertes</span></a
+            >
 
-            <!-- 4. bouton connectez vous -->
-            <button><a href="Connexion">Connectez-vous</a></button>
-            <i class="fa-solid fa-basket-shopping"></i
-            ><a href="#=basket">Panier</a>
+            <!-- 4. bouton connectez vous-->
+            <button>Connectez-vous</button>
+            <a href="#=basket"
+              ><i class="fa-solid fa-basket-shopping"></i><span>Panier</span></a
+            >
           </nav>
         </div>
       </div>
     </header>
     <main>
       <div class="container1">
-        <h1>Explorez <font color="#000">Paris</font></h1>
+        <h1><span>Explorez</span> Paris</h1>
 
         <p>
           Les revenus influencent le choix des expériences présentées sur cette
@@ -77,28 +85,31 @@
             <a href="plus">Plus<i class="fa-solid fa-ellipsis"></i></a>
           </ul>
         </nav>
-        <div class="pictures">
-          <div>
-            <img
-              class="paris1"
-              src="./assets/img/paris_img.jpg"
-              alt="photo de Paris par beau temps"
-            />
-          </div>
 
-          <div class="paris23">
-            <img
-              class="paris2"
-              src="./assets/img/paris_img2.jpg"
-              alt="photo de personnes dans Paris"
-            />
-            <img
-              class="paris3"
-              src="./assets/img/paris_img3.jpg"
-              alt="photo de la tour eiffel"
-            />
+        <section class="menu">
+          <div class="pictures">
+            <div>
+              <img
+                class="paris1"
+                src="./assets/img/paris_img.jpg"
+                alt="photo de Paris par beau temps"
+              />
+            </div>
+
+            <div class="paris23">
+              <img
+                class="paris2"
+                src="./assets/img/paris_img2.jpg"
+                alt="photo de personnes dans Paris"
+              />
+              <img
+                class="paris3"
+                src="./assets/img/paris_img3.jpg"
+                alt="photo de la tour eiffel"
+              />
+            </div>
           </div>
-        </div>
+        </section>
       </div>
       <div class="nav1">
         <a href="Continent"> Europe ></a>
