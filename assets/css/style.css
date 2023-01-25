@@ -344,16 +344,22 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 150px;
   background-color: bisque;
 }
+
 footer img {
   width: 60px;
   padding-right: 50px;
 }
 
-footer a {
+footer p {
+  font-family: "Trip sans 1";
+}
+
+footer p span a {
   text-decoration: none;
+  font-family: "Trip sans";
   color: black;
-  font-weight: bolder;
+  font-weight: bold;
 }
