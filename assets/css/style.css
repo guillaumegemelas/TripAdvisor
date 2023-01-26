@@ -213,9 +213,9 @@ h1 span {
   box-sizing: border-box;
 }
 
-.col1 {
-  /* background-color: pink; */
-}
+/* .col1 {
+  background-color: pink;
+} */
 
 .col1 p {
   padding-top: 35px;
@@ -399,9 +399,9 @@ footer p span a {
     padding-left: 20px;
     padding-right: 20px;
   }
-  header {
-    /* background-color: lightgreen; */
-  }
+  /* header {
+    background-color: lightgreen;
+  } */
 
   /*partie menu haut du site qui se réduit */
   .container1 ul {
