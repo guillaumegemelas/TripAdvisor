@@ -66,6 +66,7 @@ header .container {
   display: flex;
   height: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 /*problème pour changer couleur de font: faut il isoler le bouton du reste de la div?*/
@@ -207,16 +208,21 @@ h1 span {
   /* background-color: rgb(177, 142, 100); */
   margin: 0 auto;
   padding-top: 90px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   box-sizing: border-box;
+}
+
+.col1 {
+  /* background-color: pink; */
 }
 
 .col1 p {
   padding-top: 35px;
   /* background-color: red; */
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 25px;
 }
 
 .col2 {
@@ -391,6 +397,7 @@ footer p span a {
   /*pour décaler de 20px le contenu pour aerer le cote gauche de l'image*/
   body {
     padding-left: 20px;
+    padding-right: 20px;
   }
   header {
     /* background-color: lightgreen; */
@@ -507,4 +514,81 @@ footer p span a {
   .col2 {
     background-color: #fff;
   }
+}
+
+/*------768px------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+
+/*header icones sur les cotes et logo au milieu*/
+header {
+  display: flex;
+}
+
+/* pour cacher les deux icones en grands ecrans et les mettre en dessous de 768px*/
+@media (min-width: 768px) {
+  .container .icon {
+    display: none;
+  }
+}
+
+/*cacher le bouton*/
+@media (max-width: 768px) {
+  header > .container > nav > button {
+    display: none;
+  }
+  /*diminuer la taille du logo*/
+  header img {
+    width: 120px;
+  }
+
+  /*le menu en haut passe en carroussel sur une seule ligne*/
+  /*Partie du menu à 8 item qu'il faut mettre en scroll*/
+  .container1 ul {
+    display: flex;
+    /* background-color: pink; */
+    padding-top: 40px;
+    flex-direction: column;
+    height: 60px;
+    gap: 10px;
+    overflow-x: scroll;
+  }
+
+  /* pour masquer la scrollbar sans enlever sa fonctionnalité*/
+  .container1 ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container1 a {
+    display: flex;
+    border: #190f33 1px solid;
+    /* background-color: red; */
+    border-radius: 10px;
+    width: auto;
+    height: 10px;
+    /*pour aligner les items des menus en les décalant de 16px */
+    padding: 15px;
+    text-decoration: none;
+    color: #190f33;
+  }
+
+  .container1 a i {
+    padding-left: 20px;
+  }
+
+  /*expolrez Paris police plus petite*/
+
+  h1 {
+    font-size: 34px;
+    font-weight: bold;
+  }
+
+  /*pour que le p revienne à la ligne quand l'ecran se rapetisse*/
+  .container1 p {
+    width: 100vw;
+  }
+
+  /* les polices d'écriture diminuent*/
+
+  /* la partie carroussel est modifiée: chaque partie passe sur 2 lignes au lieu de colones
+ne subsiste qu'une photo en grand avec toujours le système de carroussel*/
 }
