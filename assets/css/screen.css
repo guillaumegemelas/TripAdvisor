@@ -2,15 +2,13 @@
 /*------1184px------------------------------------------------------------------------*/
 
 @media (max-width: 1184px) {
-  /*pour décaler de 20px le contenu pour aerer le cote gauche de l'image*/
-  body {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   /* header {
       background-color: lightgreen;
     } */
 
+  body {
+    padding: 0 25px;
+  }
   /*partie menu haut du site qui se réduit */
   .container1 ul {
     padding-top: 40px;
@@ -99,6 +97,9 @@
     display: none;
   }
 
+  body {
+    padding: 0 25px;
+  }
   header {
     display: flex;
     width: 98vw; /* façon bricolage mais le rendu correspond à peu près au résultat*/
@@ -144,6 +145,7 @@ header {
   header > .container > nav > button {
     display: none;
   }
+
   /*diminuer la taille du logo*/
   header img {
     width: 120px;
@@ -193,6 +195,19 @@ header {
   /*pour que le p revienne à la ligne quand l'ecran se rapetisse*/
   .container1 p {
     width: 100vw;
+  }
+
+  /*pour que l'element photo 1 prenne toute la place dispo à la disparition
+  des 2 photos de droite*/
+  .pictures {
+    flex: 1;
+  }
+  .menu .paris1 {
+    padding-left: 0px;
+  }
+  /*faire disparaitre les photos de droite*/
+  .paris23 {
+    display: none;
   }
 
   /* les polices d'écriture diminuent*/
